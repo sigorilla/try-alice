@@ -1,0 +1,30 @@
+{
+  "name": "try-alice",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "DEBUG=alice:* nodemon --watch src -- src/app.js",
+    "test": "eslint .",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "alice"
+  ],
+  "author": "Igor Stepanov <sigorilla@yandex-team.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-loris": "^9.1.0",
+    "husky": "^0.14.3",
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "express": "^4.16.3"
+  },
+  "engine": {
+    "node": ">=8.9.0"
+  }
+}
